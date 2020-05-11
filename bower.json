@@ -1,0 +1,28 @@
+{
+  "name": "html-starter",
+  "version": "1.5.0",
+  "authors": [
+    "LOBA <develop@loba.pt>"
+  ],
+  "description": "HTML Starter by LOBA",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.7",
+    "bootstrap-select": "^1.12.2",
+    "responsive-bootstrap-toolkit": "^2.6.3",
+    "waitForImages": "^2.2.0",
+    "fastclick": "^1.0.6",
+    "owl.carousel": "owl-carousel2#^2.2.1"
+  },
+  "devDependencies": {}
+}

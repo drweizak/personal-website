@@ -1,0 +1,24 @@
+// Sizing shortcuts
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+@mixin fill-sides($direction, $background) {
+  content: '';
+  z-index: -1;
+  background: $background;
+  @include size(1000% 100%);
+
+  @if $direction == 'left' {
+    @include position(absolute, 0 100% null null);
+  }
+  @else {
+     @include position(absolute, 0 null null 100%);
+  }
+}

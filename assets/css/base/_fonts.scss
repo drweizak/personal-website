@@ -1,0 +1,77 @@
+$font-path: "../fonts" !default;
+//@import url('https://fonts.googleapis.com/css?family=Heebo:300');
+/*@font-face {
+    font-family: 'fontName';
+    src:    url('#{$font-path}/fontName.eot');
+    src:    url('#{$font-path}/fontName.eot#iefix') format('embedded-opentype'),
+        url('#{$font-path}/fontName.ttf') format('truetype'),
+        url('#{$font-path}/fontName.woff') format('woff'),
+        url('#{$font-path}/fontName.svg#fontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+/* ICONS */
+//** File name for all font files.
+$icomoon-font-path: "../fonts" !default;
+$icon-at: "\e904";
+$icon-email: "\e904";
+$icon-profile: "\e903";
+$icon-brand3: "\e900";
+$icon-brand2: "\e901";
+$icon-brand: "\e902";
+$icon-messenger: "\e902";
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('#{$icomoon-font-path}/icomoon.eot');
+  src: url('#{$icomoon-font-path}/icomoon.eot#iefix') format('embedded-opentype'), url('#{$icomoon-font-path}/icomoon.ttf') format('truetype'), url('#{$icomoon-font-path}/icomoon.woff') format('woff'), url('#{$icomoon-font-path}/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin icon($font-size, $color) {
+  font-family: 'icomoon' !important;
+  font-size: $font-size;
+  color: $color;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include transition(color 200ms ease-in-out);
+}
+
+@mixin font-extraLight {
+  font-weight: 200;
+}
+@mixin font-light {
+  font-weight: 300;
+}
+@mixin font-regular {
+  font-weight: 400;
+}
+@mixin font-medium {
+  font-weight: 500;
+}
+@mixin font-semiBold {
+  font-weight: 600;
+}
+@mixin font-bold {
+  font-weight: 700;
+}
+@mixin font-extraBold {
+  font-weight: 800;
+}
+@mixin font-black {
+  font-weight: 900;
+}
+
+@mixin courier($font-size, $line-height, $color) {
+  font-family: 'Courier New', 'Cousine';
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}

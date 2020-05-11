@@ -1,0 +1,69 @@
+//CONTAINER E BREAKING POINTS
+
+$grid-columns: 12 !default; //** Numero de colunas.
+$grid-gutter-width: 20px !default; //** Padding Entre Colunas. É dividido em metade para a esquerda e direita.
+
+$screen-xs: 320px !default;
+$screen-sm: 768px !default;
+$screen-md: 1024px !default;
+$screen-lg: 1200px !default;
+$screen-xl: 1500px !default;
+
+$container-tablet: (720px + $grid-gutter-width) !default; //** For `$screen-sm-min` and up.
+$container-desktop: (980px + $grid-gutter-width) !default;
+$container-large-desktop: (1140px + $grid-gutter-width) !default;
+$container-xlarge-desktop: (1420px + $grid-gutter-width) !default; //** For `$screen-lg-min` and up.
+
+/* MEDIA QUERIES MIXINS */
+
+@mixin min-xs {
+   @media (min-width: $screen-xs-min){
+    @content;
+  }
+}
+@mixin min-sm {
+   @media (min-width: $screen-sm-min){
+    @content;
+  }
+}
+@mixin min-md {
+   @media (min-width: $screen-md-min){
+    @content;
+  }
+}
+@mixin min-lg {
+   @media (min-width: $screen-lg-min){
+    @content;
+  }
+}
+@mixin min-xl {
+   @media (min-width: $screen-xl-min){
+    @content;
+  }
+}
+
+@mixin max-xs {
+   @media (max-width: $screen-xs-max){
+    @content;
+  }
+}
+@mixin max-sm {
+   @media (max-width: $screen-sm-max){
+    @content;
+  }
+}
+@mixin max-md {
+   @media (max-width: $screen-md-max){
+    @content;
+  }
+}
+@mixin max-lg {
+   @media (max-width: $screen-lg-max){
+    @content;
+  }
+}
+@mixin max-xl {
+   @media (max-width: $screen-xl-max){
+    @content;
+  }
+}
