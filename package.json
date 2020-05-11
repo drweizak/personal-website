@@ -25,6 +25,6 @@
   "dependencies": {
     "gulp-rename": "^1.2.2",
     "wiredep": "^4.0.0",
-    "bootstrap-sass": "3.3.7"
+    "bootstrap-sass": "3.4.1"
   }
 }
